@@ -1,0 +1,14 @@
+.navBar {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.menuToggle {
+}
+.active {
+}
