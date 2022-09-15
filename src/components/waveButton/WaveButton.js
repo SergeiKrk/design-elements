@@ -6,7 +6,7 @@ export const WaveButton = () => {
     <>
       <div className={style.container}>
         <a href='/' className={style.wvBtn}>
-        <span>нажимай</span>
+        <span className={style.spa}>waveBtn</span>
         <div className={style.liquid}></div>
         </a>
       </div>

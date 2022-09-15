@@ -1,52 +1,72 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: #0c0c0c;
+} */
 .container {
-    display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    min-height: 100vh;
 }
-a.wvBtn {
+.wvBtn {
     position: relative;
     display: block;
-    padding: 15px 30px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 24px;
+    overflow: hidden;
     border-radius: 40px;
-    letter-spacing: 2px;
-    color: #5a84a2;
-    z-index: 1;
-    box-shadow: 
-    -2px -2px 8px rgba(255, 255, 255, 1),
-    -2px -2px 12px rgba(255, 255, 255, 0.5),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
-    2px 2px 8px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 75px;
 }
-a.clrBtn:hover {
-    box-shadow: 
-    inset -2px -2px 8px rgba(255, 255, 255, 1),
-    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.4),
-    inset 2px 2px 8px rgba(0, 0, 0, 0.3);
-}
-a.clrBtn:hover span {
-    transform: scale(0.98);
+.spa {
     position: relative;
     z-index: 1;
-    color: #fff;
+    color: rgb(122, 52, 52);
     font-size: 20px;
     letter-spacing: 8px;
+    top: 20px;
 }
-a.liquid {
-    position: absolute;
+a .liquid {
+    /* position: absolute; */
+    position: relative;
     left: 0;
-    top: 0;
+    top: -80px;
     width: 200px;
     height: 200px;
     background: #4973ff;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
     transition: 0.5s;
+}
+a:hover .liquid {
+    top: -150px;
+}
+a .liquid:after, 
+a .liquid:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    transform: translate(-50%,-75%);
+}
+a .liquid::after {
+    border-radius: 45%;
+    background: rgb(255, 255, 255);
+    animation: animate 5s linear infinite;
+}
+a .liquid::before {
+    border-radius: 40%;
+    background: rgba(255, 255, 255, 0.5);
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: translate(-50%,-75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-75%) rotate(360deg);
+    }
 }
