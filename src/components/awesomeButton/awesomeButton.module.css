@@ -1,65 +1,63 @@
 .container {
-    display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 a.awsBtn {
-    position: relative;
-    display: block;
-    padding: 15px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 24px;
-    border-radius: 40px;
-    letter-spacing: 2px;
-    color: #fff;
-    z-index: 1;
-    background: linear-gradient(90deg, #03a9f0, #f441a5, #ffeb3b, #03a9f0);
-    background-size: 400%;
-    box-shadow: 
-    -2px -2px 8px rgba(255, 255, 255, 1),
+  position: relative;
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  color: #fff;
+  z-index: 1;
+  background: linear-gradient(90deg, #03a9f0, #f441a5, #ffeb3b, #03a9f0);
+  background-size: 400%;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
     -2px -2px 12px rgba(255, 255, 255, 0.5),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
-    2px 2px 8px rgba(0, 0, 0, 0.15);
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 a.awsBtn:hover {
 }
 a.awsBtn:hover span {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 a.awsBtn:before {
-    z-index: 1;
-    background: #fff;
-    border-radius: 30px;
-    opacity: 0;
-    transition: 0.5s;
+  z-index: 1;
+  background: #fff;
+  border-radius: 30px;
+  opacity: 0;
+  transition: 0.5s;
 }
 a.awsBtn:hover:before {
-    filter: blur(20px);
-    z-index: -1;
-    opacity: 1;
-    animation: animate 8s linear infinite;
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: linear-gradient(90deg, #03a9f0, #f441a5, #ffeb3b, #03a9f0);
-    background-size: 400%;
-    border-radius: 30px;
-    transition: 0.5s;
+  filter: blur(20px);
+  z-index: -1;
+  opacity: 1;
+  animation: animate 8s linear infinite;
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(90deg, #03a9f0, #f441a5, #ffeb3b, #03a9f0);
+  background-size: 400%;
+  border-radius: 30px;
+  transition: 0.5s;
 }
 @keyframes animate {
-    0% {
-        background-position: 0%;
-    }
-    100% {
-        background-position: 400%;
-    }
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }

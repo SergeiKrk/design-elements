@@ -1,14 +1,8 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: #0c0c0c;
-} */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 100px;
 }
 .wvBtn {
   position: relative;
@@ -19,6 +13,9 @@
   border-radius: 40px;
   width: 200px;
   height: 70px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 .spa {
   position: relative;
