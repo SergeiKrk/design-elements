@@ -49,20 +49,33 @@ nav ul li a:hover {
   color: #fff;
   transition: 0.5s;
 }
+.menuToggle {
+  display: none;
+}
 .active {
 }
 
 @media (max-width: 1200px) {
   .menuToggle {
+    margin: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .menuToggle {
     display: block;
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 10px 20px;
     background: #ccc;
     float: right;
     cursor: pointer;
     text-align: center;
     font-size: 30px;
     color: #069370;
+  }
+  nav {
+    display: none;
+  }
+  .menuToggle::before {
   }
 }

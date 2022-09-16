@@ -1,5 +1,7 @@
 import React from "react";
 import s from "./navBar.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = () => {
   return (
@@ -7,7 +9,9 @@ export const NavBar = () => {
       <a className={s.logo} href="/">
         Logo
       </a>
-      <div className={s.menuToggle}>A</div>
+      <div className={s.menuToggle}>
+        <FontAwesomeIcon icon={faBars} />
+      </div>
       <nav className={s.nav}>
         <ul>
           <li>
