@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import s from "./navBar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = () => {
+  const navRef = useRef;
+  const shovNavbar = () => {
+    navRef.current.classList.toggle("active");
+  };
   return (
     <div className={s.navBar}>
       <a className={s.logo} href="/">
         Logo
       </a>
-      <div className={s.menuToggle}>
+      <div className={s.menuToggle} onClick={shovNavbar}>
         <FontAwesomeIcon icon={faBars} />
       </div>
       <nav className={s.nav}>
